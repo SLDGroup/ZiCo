@@ -1,3 +1,6 @@
+Official code for 'How does topology influence gradient propagation and model performance of deep networks with DenseNet-type skip connections?' (CVPR 2021) [Paper link](https://openreview.net/forum?id=rwo-ls5GqGn)
+
+# Usage
 Install the python environment; check `./environment.txt`
 ZiCo-based searching for and train ImageNet models, with FLOPs budget from 450M to 1G:
 ``` bash
@@ -27,3 +30,13 @@ python val.py --fp16 --gpu 0 --arch Params_imagenet1k_flops450M_res224 --ckpt_pa
 ```
 
 The code is modified on `https://github.com/idstcv/ZenNAS`
+
+if you find our code useful, please consider citing our paper:
+```
+@article{li2023zico,
+  title={ZiCo: Zero-shot NAS via Inverse Coefficient of Variation on Gradients},
+  author={Li, Guihong and Yang, Yuedong and Bhardwaj, Kartikeya and Marculescu, Radu},
+  journal={arXiv preprint arXiv:2301.11300},
+  year={2023}
+}
+```
