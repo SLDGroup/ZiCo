@@ -1,4 +1,4 @@
-Official code for 'How does topology influence gradient propagation and model performance of deep networks with DenseNet-type skip connections?' (CVPR 2021) [Paper link](https://openreview.net/forum?id=rwo-ls5GqGn)
+Official code for 'ZiCo: Zero-shot NAS via Inverse Coefficient of Variation on Gradients' (ICLR 2023) [Paper link](https://openreview.net/forum?id=rwo-ls5GqGn)
 
 # Usage
 Install the python environment; check `./environment.txt`
