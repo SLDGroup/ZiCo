@@ -50,6 +50,7 @@ def getzico(network, trainloader, lossfunc):
 
     network.cuda()
     for i, batch in enumerate(trainloader):
+        network.zero_grad()
         data,label = batch[0],batch[1]
         data,label=data.cuda(),label.cuda()
 
@@ -57,5 +58,6 @@ def getzico(network, trainloader, lossfunc):
         loss = lossfunc(logits, label)
         loss.backward()
         grad_dict= getgrad(network, grad_dict,i)
+        
     res = caculate_zico(grad_dict)
     return res
