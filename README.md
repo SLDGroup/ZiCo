@@ -1,4 +1,12 @@
-Official code for 'ZiCo: Zero-shot NAS via Inverse Coefficient of Variation on Gradients' (ICLR 2023) [Paper link](https://openreview.net/forum?id=rwo-ls5GqGn)
+Official code for 'ZiCo: Zero-shot NAS via Inverse Coefficient of Variation on Gradients' (ICLR 2023 Spotlight) [Paper link](https://openreview.net/forum?id=rwo-ls5GqGn)
+
+
+<div align="center">
+    <a href="./">
+        <img src="./figs/zicoall.svg" width="79%"/>
+    </a>
+</div>
+
 
 # Usage
 Install the python environment; check `./environment.txt`
@@ -33,10 +41,12 @@ The code is modified on `https://github.com/idstcv/ZenNAS`
 
 if you find our code useful, please consider citing our paper:
 ```
-@article{li2023zico,
-  title={ZiCo: Zero-shot NAS via Inverse Coefficient of Variation on Gradients},
-  author={Li, Guihong and Yang, Yuedong and Bhardwaj, Kartikeya and Marculescu, Radu},
-  journal={arXiv preprint arXiv:2301.11300},
-  year={2023}
+@inproceedings{
+li2023zico,
+title={ZiCo: Zero-shot {NAS} via inverse Coefficient of Variation on Gradients},
+author={Guihong Li and Yuedong Yang and Kartikeya Bhardwaj and Radu Marculescu},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=rwo-ls5GqGn}
 }
 ```
