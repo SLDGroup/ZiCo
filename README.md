@@ -10,9 +10,11 @@ Official code for 'ZiCo: Zero-shot NAS via Inverse Coefficient of Variation on G
 
 # Usage
 Install the python environment; 
-`conda env create -f environment.yml`
-`conda activate zico`
-`HOROVOD_WITH_PYTORCH=1 pip install horovod[pytorch]`
+``` bash
+conda env create -f environment.yml
+conda activate zico
+HOROVOD_WITH_PYTORCH=1 pip install horovod[pytorch]
+```
 
 
 ZiCo-based searching for and train ImageNet models, with FLOPs budget from 450M to 1G:
