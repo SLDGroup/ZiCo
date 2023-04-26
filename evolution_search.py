@@ -18,7 +18,7 @@ from xautodl import datasets
 import time
 
 from ZeroShotProxy import compute_zen_score, compute_te_nas_score, compute_syncflow_score, compute_gradnorm_score, compute_NASWOT_score, compute_zico
-import benchmark_network_latency
+import network_latency
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -108,7 +108,7 @@ def get_latency(AnyPlainNet, random_structure_str, gpu, args):
                             no_create=False, no_reslink=False)
     if gpu is not None:
         the_model = the_model.cuda(gpu)
-    the_latency = benchmark_network_latency.get_model_latency(model=the_model, batch_size=args.batch_size,
+    the_latency = network_latency.get_model_latency(model=the_model, batch_size=args.batch_size,
                                                               resolution=args.input_image_size,
                                                               in_channels=3, gpu=gpu, repeat_times=1,
                                                               fp16=True)
